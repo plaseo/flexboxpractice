@@ -9,7 +9,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 /* Some default styles to make each box visible */
 .box {
   color:white;
-  font-size: 20px;
+  font-size: 50px;
   text-align: center;
   text-shadow:4px 4px 0 rgba(0,0,0,0.1);
   padding:10px;
@@ -35,24 +35,94 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
     by default the main axis is left to right */
 
     /* check where the main axis is and the cross axis */
-.container{
-  display:flex;
+/* .container{ */
+  /* display:flex; */
   /* sets the minimum height of the container, defaults to however much the content within the container needs */
-  min-height: 1000px ;
+  /* min-height: 1000px ; */
   /* adds a border around the container to as to illustrate the container better */
-  border: 10px solid greenyellow;
+  /* border: 10px solid greenyellow; */
   /* change the flex direction from left to right to top to bottom */
-  flex-direction: column;
+  /* flex-direction: column; */
   /* by default content is justified from the start of the container
     we can justify the content to the end of the container with justify-content:flex-end;
     we can also center the content */
-  justify-content: center;
+  /* justify-content: center; */
   /* sets items with even spacing in the container */
     /* justify-content: space-between; */
   /* gives space on the left and the right */
-    /* justify-content: space-around; */
+    /* justify-content: space-around; 
+} */
+
+/* create a flext container */
+/* .container{ */
+  /* display:flex; */
+  /* shows a border around the container, in this just to illustrate the container */
+  /* border: 10px solid greenyellow; */
+  /* by default container axis is left-to-right, this changes the main axis top-to-bottom */
+  /* flex-direction: column; */
+  /* by default items are aligned in 'strech' which will fill the container */
+  /* align-items: center;
+  height: 100vh;
+  flex-direction: column; */
+
+/* }
+
+.box1{
+  font-size: 30px;
+
 }
 
+.box2{
+  font-size: 15px;
+
+}
+
+.box3{
+  font-size: 25px;
+
+}
+.box4{
+  font-size: 35px;
+
+}
+.box5{
+  font-size: 45px;
+
+} */
+
+/* create the container */
+/* .container{
+  display: flex;
+  border: 10px solid greenyellow;
+  height: 100vh;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  justify-content: center; */
+  /* align-content takes the space in the cross axis and splits it up */
+  /* align-content: space-between; */
 
 
+/* }
 
+.box{
+  width: 33.333%;
+} */
+
+/* create the container */
+.container {
+  display: flex;
+  border: 10px solid mistyrose;
+  height: 100vh;
+  align-items: flex-start;
+}
+.box2{
+  padding-bottom: 200px;  
+}
+.box6{
+  padding-bottom: 0;
+}
+.box9{
+  padding-bottom: 50px;
+  /* allows an individual item to be aligned within the container */
+  align-self: flex-end;
+}

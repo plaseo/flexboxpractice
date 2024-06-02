@@ -29,16 +29,26 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 
 /* We start writing out flexbox here. The above is just page setup */
+/* flex-grow sets how much space a flex item will take if there is leftover space in the container */
+/* flex-shrink set how we should slim down if there is not enough space in the container */
+/* the default for flex-shrink if there is not enough room is to divide the space evenly */
+/* think of flex-shrink as an amount an item should give up of itself if there is not enough room */
 .container {
   display:flex;
 }
 
-.box1 {
+.box1{ 
+  /* flex-basis: 400px;
+  flex-grow: 1;
+  flex-shrink: 100; */
+  /* much easier way to write flex: 10(grow) 5(shrink) 40(basis) */
   flex:10 5 400px;
-}
 
-.box2 {
-  flex:1 1 400px;
+}
+.box2{
+  flex: 1 1 400px;
+  /* flex-basis: 400px;
+  flex-grow: 10; */
 }
 
 
