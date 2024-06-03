@@ -37,7 +37,7 @@ column reverse we can go from bottom to top instead of top to bottom */
   display:flex;
   border:10px solid goldenrod;
   min-height:100vh;
-  flex-direction: co
+  flex-direction: column
   /* flex-wrap:wrap; */
 }
 
